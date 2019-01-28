@@ -12,6 +12,11 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "ical": "^0.5.0",
+    "ical-parser": "^1.2.0",
+    "ical2json": "^1.2.0",
+    "ics-to-json": "^1.0.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.9"
   }
