@@ -7,6 +7,8 @@ var ical2json = require("ical2json");
 var parser = require("ical-parser");
 var fs = require('fs');
 
+var formidable = require('formidable');
+
 
 
 // import icsToJson from 'ics-to-json'
@@ -36,9 +38,48 @@ router.get('/parse', (req, res) => {
                 if (err) {
                     console.log("Error occurred parsing ical data", err);
                 } else {
-                    //console.log(parsedResponse)
 
-                    res.json(parsedResponse)
+                    //res.json()
+
+                    //console.log(parsedResponse[2])
+
+                    const cdata = parsedResponse.VCALENDAR[0].VEVENT
+
+                    //res.send(cdata)
+
+                    //res.json(cdata["SUMMARY"])
+
+                    var data = []
+
+
+                    for (var i = 0; i < cdata.length; i++) {
+
+                        var r = cdata[i]
+
+                        data[i] = {
+                            "title": r.SUMMARY,
+                            "desc": r.DESCRIPTION,
+                            "roomId": r.LOCATION,
+                            "startTime": r["DTSTART;TZID=America/Vancouver"].substr(9,),
+                            "endTime":r["DTEND;TZID=America/Vancouver"].substr(9,),
+                        }
+
+                    }
+
+                    res.json(data)
+
+                    // const o = cdata
+
+                    // console.log(o.SUMMARY)
+
+                    // res.send(o)
+
+
+
+
+                    //res.json(parsedResponse)
+
+                    //res.json(parsedResponse)
                     //parsedResponse is the parsed javascript JSON object
                 }
             });
@@ -48,9 +89,9 @@ router.get('/parse', (req, res) => {
         console.log("Program Ended");
     };
 
-    //parseFile('/ical.ics');
+    parseFile('/ical.ics');
 
-    parseFile(url)
+    //parseFile(url)
 
     // fs.readFile(cal, 'ut8', (err, data) => {
     //     if (err) {
@@ -89,6 +130,21 @@ router.get('/parse', (req, res) => {
     //     res.json({ data,err })
     // })
 
+})
+
+router.post('/upload', (req, res) => {
+
+    new formidable.IncomingForm().parse(req, (err, fields, files) => {
+        if (err) {
+            console.error('Error', err)
+            throw err
+        }
+        console.log('Fields', fields)
+        console.log('Files', files)
+        files.map(file => {
+            console.log(file)
+        })
+    })
 })
 
 
