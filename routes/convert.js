@@ -9,12 +9,26 @@ var fs = require('fs');
 
 var formidable = require('formidable');
 
+const multer = require('multer')
+
+
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, './files/')
+    },
+    filename: function (req, file, cb) {
+        cb(null, new Date().toISOString() + file.originalname)
+    }
+})
+
+const upload = multer({storage: storage})
+
 
 
 // import icsToJson from 'ics-to-json'
 
 
-router.get('/parse', (req, res) => {
+router.post('/parse', upload.single('calendar'), (req, res) => {
 
     // const fileLocation = require('../files/david_cal.ics')
 
@@ -26,8 +40,10 @@ router.get('/parse', (req, res) => {
 
     const cal = 'data.txt'
 
+    const filename = req.file.filename
+
     const parseFile = path => {
-        fs.readFile(__dirname + path, "utf8", (err, data) => {
+        fs.readFile(path, "utf8", (err, data) => {
             if (err) {
                 console.log(err.stack);
                 return;
@@ -39,18 +55,9 @@ router.get('/parse', (req, res) => {
                     console.log("Error occurred parsing ical data", err);
                 } else {
 
-                    //res.json()
-
-                    //console.log(parsedResponse[2])
-
                     const cdata = parsedResponse.VCALENDAR[0].VEVENT
 
-                    //res.send(cdata)
-
-                    //res.json(cdata["SUMMARY"])
-
                     var data = []
-
 
                     for (var i = 0; i < cdata.length; i++) {
 
@@ -58,29 +65,16 @@ router.get('/parse', (req, res) => {
 
                         data[i] = {
                             "title": r.SUMMARY,
-                            "desc": r.DESCRIPTION,
+                            "desc": r.DESCRIPTION.replace('\\n', " "),
                             "roomId": r.LOCATION,
-                            "startTime": r["DTSTART;TZID=America/Vancouver"].substr(9,),
-                            "endTime":r["DTEND;TZID=America/Vancouver"].substr(9,),
+                            "startTime": r["DTSTART;TZID=America/Vancouver"].substr(9),
+                            "endTime": r["DTEND;TZID=America/Vancouver"].substr(9),
                         }
 
                     }
 
                     res.json(data)
 
-                    // const o = cdata
-
-                    // console.log(o.SUMMARY)
-
-                    // res.send(o)
-
-
-
-
-                    //res.json(parsedResponse)
-
-                    //res.json(parsedResponse)
-                    //parsedResponse is the parsed javascript JSON object
                 }
             });
 
@@ -89,7 +83,7 @@ router.get('/parse', (req, res) => {
         console.log("Program Ended");
     };
 
-    parseFile('/ical.ics');
+    parseFile(req.file.path)
 
     //parseFile(url)
 
@@ -131,23 +125,5 @@ router.get('/parse', (req, res) => {
     // })
 
 })
-
-router.post('/upload', (req, res) => {
-
-    new formidable.IncomingForm().parse(req, (err, fields, files) => {
-        if (err) {
-            console.error('Error', err)
-            throw err
-        }
-        console.log('Fields', fields)
-        console.log('Files', files)
-        files.map(file => {
-            console.log(file)
-        })
-    })
-})
-
-
-
 
 module.exports = router
