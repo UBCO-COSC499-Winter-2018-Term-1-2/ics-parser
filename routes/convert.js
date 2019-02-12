@@ -1,13 +1,8 @@
 const express = require('express')
 const router = express.Router();
-const ical = require('ical')
-
-var ical2json = require("ical2json");
 
 var parser = require("ical-parser");
 var fs = require('fs');
-
-var formidable = require('formidable');
 
 const multer = require('multer')
 
@@ -24,11 +19,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage })
 
 
-
-// import icsToJson from 'ics-to-json'
-
-
-router.post('/parse', upload.single('calendar'), (req, res) => {
+router.post('/', upload.single('calendar'), (req, res) => {
 
     const parseFile = path => {
         fs.readFile(path, "utf8", (err, data) => {
@@ -36,7 +27,6 @@ router.post('/parse', upload.single('calendar'), (req, res) => {
                 console.log(err.stack);
                 return;
             }
-            //console.log(data.toString());
 
             parser.convert(data, function (err, parsedResponse) {
                 if (err) {
@@ -57,12 +47,13 @@ router.post('/parse', upload.single('calendar'), (req, res) => {
                             "roomId": r.LOCATION.replace(/\\/g, ""),
                             "startTime": r["DTSTART;TZID=America/Vancouver"].substr(9),
                             "endTime": r["DTEND;TZID=America/Vancouver"].substr(9),
+                            "day": r.RRULE.substr(-2)
                         }
-
                     }
-
-                    res.json(data)
-
+                    console.log(data)
+                    res.json({
+                        calendarData: data
+                    })
                 }
             });
 

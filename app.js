@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 
 const convertRoute = require('./routes/convert')
 
-app.use('/convert', convertRoute)
+app.use('/parse', convertRoute)
 
 app.use(express.static('files'))
 
