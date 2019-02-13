@@ -53,9 +53,7 @@ router.post('/', upload.single('calendar'), (req, res) => {
 
                         console.log(month)
 
-                        //res.send(cdata)
-
-
+                        
 
                         data[i] = {
                             "title": r.SUMMARY,
