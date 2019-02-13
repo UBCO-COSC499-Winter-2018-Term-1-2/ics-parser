@@ -35,11 +35,27 @@ router.post('/', upload.single('calendar'), (req, res) => {
 
                     const cdata = parsedResponse.VCALENDAR[0].VEVENT
 
+                    //res.send(cdata)
+
                     var data = []
 
                     for (var i = 0; i < cdata.length; i++) {
 
                         var r = cdata[i]
+
+                        var year = r["DTSTART;TZID=America/Vancouver"].substring(0,4);
+
+                        var month = r["DTSTART;TZID=America/Vancouver"].substring(4,6);
+
+                        var day = r["DTSTART;TZID=America/Vancouver"].substring(6,8);
+
+                        var date = `${day}/${month}/${year}`
+
+                        console.log(month)
+
+                        //res.send(cdata)
+
+
 
                         data[i] = {
                             "title": r.SUMMARY,
@@ -47,7 +63,8 @@ router.post('/', upload.single('calendar'), (req, res) => {
                             "roomId": r.LOCATION.replace(/\\/g, ""),
                             "startTime": r["DTSTART;TZID=America/Vancouver"].substr(9),
                             "endTime": r["DTEND;TZID=America/Vancouver"].substr(9),
-                            "day": r.RRULE.substr(-2)
+                            "day": r.RRULE.substr(-2),
+                            "date": date
                         }
                     }
                     console.log(data)

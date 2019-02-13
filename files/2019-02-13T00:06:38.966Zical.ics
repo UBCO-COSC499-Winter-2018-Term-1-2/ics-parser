@@ -188,200 +188,200 @@ RDATE:19870101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181126T235959;INTERVAL=1;BYDAY=MO
 SUMMARY:COSC 305 001
 LOCATION:ART\, Room 114
 DESCRIPTION:This course requires co-requisites. If you are unable to register\, please contact Hilda Patzer at unit5.okanagan@ubc.ca. and include your name\, student ID\, and course number.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302928abcd422398
+DTSTAMP:20190212T225801Z
+UID:12341550012281098abcd402590
 DTSTART;TZID=America/Vancouver:20180903T093000
 DTEND;TZID=America/Vancouver:20180903T103000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181128T235959;INTERVAL=1;BYDAY=WE
 SUMMARY:COSC 305 001
 LOCATION:ART\, Room 114
 DESCRIPTION:This course requires co-requisites. If you are unable to register\, please contact Hilda Patzer at unit5.okanagan@ubc.ca. and include your name\, student ID\, and course number.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd292416
+DTSTAMP:20190212T225801Z
+UID:12341550012281107abcd316015
 DTSTART;TZID=America/Vancouver:20180905T093000
 DTEND;TZID=America/Vancouver:20180905T103000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181130T235959;INTERVAL=1;BYDAY=FR
 SUMMARY:COSC 305 001
 LOCATION:ART\, Room 114
 DESCRIPTION:This course requires co-requisites. If you are unable to register\, please contact Hilda Patzer at unit5.okanagan@ubc.ca. and include your name\, student ID\, and course number.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd102692
+DTSTAMP:20190212T225801Z
+UID:12341550012281107abcd292562
 DTSTART;TZID=America/Vancouver:20180907T093000
 DTEND;TZID=America/Vancouver:20180907T103000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181127T235959;INTERVAL=1;BYDAY=TU
 SUMMARY:COSC 305 L02
 LOCATION:ASC\, Room 165
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd461430
+DTSTAMP:20190212T225801Z
+UID:12341550012281108abcd459043
 DTSTART;TZID=America/Vancouver:20180904T153000
 DTEND;TZID=America/Vancouver:20180904T173000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181126T235959;INTERVAL=1;BYDAY=MO
 SUMMARY:COSC 320 001
 LOCATION:ASC\, Room 130
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd227489
+DTSTAMP:20190212T225801Z
+UID:12341550012281108abcd106955
 DTSTART;TZID=America/Vancouver:20180903T113000
 DTEND;TZID=America/Vancouver:20180903T123000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181128T235959;INTERVAL=1;BYDAY=WE
 SUMMARY:COSC 320 001
 LOCATION:ASC\, Room 130
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd223218
+DTSTAMP:20190212T225801Z
+UID:12341550012281108abcd389128
 DTSTART;TZID=America/Vancouver:20180905T113000
 DTEND;TZID=America/Vancouver:20180905T123000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181130T235959;INTERVAL=1;BYDAY=FR
 SUMMARY:COSC 320 001
 LOCATION:ASC\, Room 130
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd176938
+DTSTAMP:20190212T225801Z
+UID:12341550012281109abcd453736
 DTSTART;TZID=America/Vancouver:20180907T113000
 DTEND;TZID=America/Vancouver:20180907T123000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181126T235959;INTERVAL=1;BYDAY=MO
 SUMMARY:MATH 200 002
 LOCATION:ART\, Room 114
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist. Please register in the lecture even if no lab is currently available. Additional labs will be added if needed before the beginning of the term. Please check back to see if an open lab fits your schedule.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302929abcd362442
+DTSTAMP:20190212T225801Z
+UID:12341550012281109abcd14436
 DTSTART;TZID=America/Vancouver:20180903T083000
 DTEND;TZID=America/Vancouver:20180903T093000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181128T235959;INTERVAL=1;BYDAY=WE
 SUMMARY:MATH 200 002
 LOCATION:ART\, Room 114
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist. Please register in the lecture even if no lab is currently available. Additional labs will be added if needed before the beginning of the term. Please check back to see if an open lab fits your schedule.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302930abcd473889
+DTSTAMP:20190212T225801Z
+UID:12341550012281110abcd287191
 DTSTART;TZID=America/Vancouver:20180905T083000
 DTEND;TZID=America/Vancouver:20180905T093000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181130T235959;INTERVAL=1;BYDAY=FR
 SUMMARY:MATH 200 002
 LOCATION:ART\, Room 114
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist. Please register in the lecture even if no lab is currently available. Additional labs will be added if needed before the beginning of the term. Please check back to see if an open lab fits your schedule.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302930abcd99923
+DTSTAMP:20190212T225801Z
+UID:12341550012281110abcd22804
 DTSTART;TZID=America/Vancouver:20180907T083000
 DTEND;TZID=America/Vancouver:20180907T093000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181128T235959;INTERVAL=1;BYDAY=WE
 SUMMARY:MATH 200 L04
 LOCATION:FIP\, Room 129
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302930abcd471176
+DTSTAMP:20190212T225801Z
+UID:12341550012281111abcd100164
 DTSTART;TZID=America/Vancouver:20180905T153000
 DTEND;TZID=America/Vancouver:20180905T163000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181126T235959;INTERVAL=1;BYDAY=MO
 SUMMARY:VISA 110 001
 LOCATION:LIB\, Room L306
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302930abcd254684
+DTSTAMP:20190212T225801Z
+UID:12341550012281111abcd244645
 DTSTART;TZID=America/Vancouver:20180903T160000
 DTEND;TZID=America/Vancouver:20180903T190000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20181127T235959;INTERVAL=1;BYDAY=TU
 SUMMARY:COSC 499 001
 LOCATION:EME\, Room 2181
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist.\n\nPlease register in the lecture even if no lab is currently available. Additional labs will be added if needed before the beginning of the term. Please check back to see if an open lab fits your schedule.\n\nIf the course is blocked please add yourself to the waitlist.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302931abcd195740
+DTSTAMP:20190212T225801Z
+UID:12341550012281112abcd122648
 DTSTART;TZID=America/Vancouver:20180904T173000
 DTEND;TZID=America/Vancouver:20180904T203000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20190402T235959;INTERVAL=1;BYDAY=TU
 SUMMARY:COSC 499 001
 LOCATION:EME\, Room 2181
 DESCRIPTION:This course has HARD pre-requisites. If you are unable to register because of a pre-requisite issue\, please email unit5.okanagan@ubc.ca. Include your name\, student number\, the course you would like to register in\, the pre-requisite(s) you are missing\, plus a DETAILED reason why you are requesting the pre-requisite waiver. If your pre-requisite waiver is approved\, you will be force-added to the course\, so please include your registration date and time.\n\nIf the course is blocked please add yourself to the waitlist.\n\nPlease register in the lecture even if no lab is currently available. Additional labs will be added if needed before the beginning of the term. Please check back to see if an open lab fits your schedule.\n\nIf the course is blocked please add yourself to the waitlist.\n\n
-DTSTAMP:20190211T214142Z
-UID:12341549921302931abcd491926
+DTSTAMP:20190212T225801Z
+UID:12341550012281112abcd317150
 DTSTART;TZID=America/Vancouver:20190101T173000
 DTEND;TZID=America/Vancouver:20190101T203000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20190404T235959;INTERVAL=1;BYDAY=TH
 SUMMARY:COSC 421 101
 LOCATION:ART\, Room 218
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302931abcd549719
+DTSTAMP:20190212T225801Z
+UID:12341550012281112abcd527113
 DTSTART;TZID=America/Vancouver:20190103T140000
 DTEND;TZID=America/Vancouver:20190103T170000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20190405T235959;INTERVAL=1;BYDAY=FR
 SUMMARY:COSC 421 L01
 LOCATION:EME\, Room 2205
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302931abcd487714
+DTSTAMP:20190212T225801Z
+UID:12341550012281113abcd184584
 DTSTART;TZID=America/Vancouver:20190104T083000
 DTEND;TZID=America/Vancouver:20190104T103000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20190401T235959;INTERVAL=1;BYDAY=MO
 SUMMARY:PHIL 331 101
 LOCATION:LIB\, Room L305
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302931abcd401729
+DTSTAMP:20190212T225801Z
+UID:12341550012281113abcd552843
 DTSTART;TZID=America/Vancouver:20181231T170000
 DTEND;TZID=America/Vancouver:20181231T183000
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20190211T214142Z
+DTSTAMP:20190212T225801Z
 RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20190403T235959;INTERVAL=1;BYDAY=WE
 SUMMARY:PHIL 331 101
 LOCATION:LIB\, Room L305
 DESCRIPTION:
-DTSTAMP:20190211T214142Z
-UID:12341549921302931abcd557064
+DTSTAMP:20190212T225801Z
+UID:12341550012281114abcd353347
 DTSTART;TZID=America/Vancouver:20190102T170000
 DTEND;TZID=America/Vancouver:20190102T183000
 END:VEVENT
