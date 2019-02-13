@@ -16,6 +16,10 @@ const storage = multer.diskStorage({
     }
 })
 
+router.get('/hello', (req, res) => {
+    res.send("Hello World! I am a ics parser")
+})
+
 const upload = multer({ storage: storage })
 
 
@@ -53,7 +57,7 @@ router.post('/', upload.single('calendar'), (req, res) => {
 
                         console.log(month)
 
-                        
+
 
                         data[i] = {
                             "title": r.SUMMARY,
