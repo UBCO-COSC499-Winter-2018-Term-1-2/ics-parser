@@ -18,11 +18,11 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(express.static('files'))
+
 
 const convertRoute = require('./routes/convert')
 
 app.use('/parse', convertRoute)
-
-app.use(express.static('files'))
 
 module.exports = app;
