@@ -47,17 +47,23 @@ router.post('/', upload.single('calendar'), (req, res) => {
 
                         var r = cdata[i]
 
-                        var year = r["DTSTART;TZID=America/Vancouver"].substring(0,4);
+                        //Date
+                        var year = r["DTSTART;TZID=America/Vancouver"].substring(0, 4);
 
-                        var month = r["DTSTART;TZID=America/Vancouver"].substring(4,6);
+                        var month = r["DTSTART;TZID=America/Vancouver"].substring(4, 6);
 
-                        var day = r["DTSTART;TZID=America/Vancouver"].substring(6,8);
+                        var day = r["DTSTART;TZID=America/Vancouver"].substring(6, 8);
 
                         var date = `${day}/${month}/${year}`
 
+                        //util
+
+                        var year = r.RRULE.substr(26, 4)
+                        var month = r.RRULE.substr(30, 2)
+                        var day  = r.RRULE.substr(32, 2)
+                        var until = `${day}/${month}/${year}`
+
                         console.log(month)
-
-
 
                         data[i] = {
                             "title": r.SUMMARY,
@@ -66,7 +72,9 @@ router.post('/', upload.single('calendar'), (req, res) => {
                             "startTime": r["DTSTART;TZID=America/Vancouver"].substr(9),
                             "endTime": r["DTEND;TZID=America/Vancouver"].substr(9),
                             "day": r.RRULE.substr(-2),
-                            "date": date
+                            "date": date,
+                            "freq": r.RRULE.substr(5, 6),
+                            "until": until
                         }
                     }
                     console.log(data)
